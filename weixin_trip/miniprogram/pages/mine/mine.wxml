@@ -1,0 +1,38 @@
+
+<view class="bc">
+   <!-- 顶部的图片 -->
+   <view  class="pic" >
+      <image src="{{list[0].fileID}}"></image>
+   </view>
+   <!-- 关于我们 -->
+   <view>
+     <!-- 标题 -->
+     <view class="title">关于我们</view>
+     <!-- 介绍 -->
+     <view class="intr">不爱包浆的核桃  只想闻你手腕上的沉香  不屑唐朝的瓷碗  只想尝你熬的汤    宇宙的中心很大  大到可以装下一万种委屈  宇宙的中心很小  小到一碗泡面就可以温暖自己    大山子的节奏很慢  我的身材很胖  但还好  我们都是自己喜欢的模样    三里屯的灯光还是那样明亮  我却不敢喝醉了  因为害怕自己回家时  再也找不到藏在楼道里的钥匙    点了几串小腰  多喝了几杯酒  在不明朝向的望京街道上  怎么也找不到回家的方向    有时是一口  就泪流满面  不是因为辣椒太辣  而是因为家乡太远    想把西瓜最中间  那一口给你  这就是我的心意</view>
+     <view class="flex">
+       <view class="sort">
+          <text class="we">600+</text>
+          <text class="normal">不同定制线路</text>
+       </view>
+        <view class="sort">
+          <text  class="we">5w+</text>
+          <text class="normal">客户每年定制</text>
+       </view>
+        <view class="sort">
+          <text  class="we">40+</text>
+          <text class="normal">不同合作企业</text>
+       </view>
+     </view>
+   </view>
+   <!-- 练习我们 -->
+     <view class="call">
+        <!-- 标题 -->
+        <view class="title">联系我们</view>
+        <!-- 介绍 -->
+        <view>000-000000</view>
+        <view>xx省xx市xx路xx号</view>
+        <view>xx@co.m</view>        
+        <van-button size="small" data-hi="weChat" bindtap="tapName" type="danger">联系我们</van-button>
+   </view>
+</view>

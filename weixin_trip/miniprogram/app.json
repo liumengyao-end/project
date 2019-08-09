@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Load/Load",
+    "pages/mine/mine",
+    "pages/play/play",
+    "pages/Little/Little",
+    "pages/search/search",
+    "pages/search/search-address/search-address",
+    "pages/detail/detail",
+    "pages/search/search-product/search-product",
+    "pages/upload/upload"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "侠侣亲子游",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#F29700",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/little_img/shouye01.png",
+      "selectedIconPath": "images/little_img/shouye02.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/little_img/sousuo01.png",
+        "selectedIconPath": "images/little_img/sousuo02.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/little_img/user01.png",
+        "selectedIconPath": "images/little_img/user02.png"
+      }
+    ]
+  }
+}

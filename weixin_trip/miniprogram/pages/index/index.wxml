@@ -1,0 +1,69 @@
+<!--pages/index/index.wxml-->
+<!-- 头：厦门+搜索 -->
+  <view class="head_box"> 
+    <text class="head_text" bindtap="xiaLa" >厦门</text>
+    <image src='../../images/little_img/xiala.png' style="width:15px;height:15px;"></image>
+    <view class="search_box" bindtap='jumpSearch'>
+      <image
+      src='../../images/little_img/search.png'
+      style="width:25px;height:25px;vertical-align:middle;margin-left:10px;margin-right:20px;">
+      </image>
+      <text style="vertical-align:middle">请输入目的地/景点/酒店/活动名称</text>
+    </view>
+  </view>
+<!-- 头结尾 -->
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item  >
+      <image src="{{item.fileID}}" class="slide-image" width="355" height="250" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 小图标 -->
+<view class="little_box_box">
+  <view class="little_box" wx:for="{{photo}}" wx:key="index"> 
+   <image 
+   src="{{item.fileID}}"
+   style="width:45px;height:35px;"
+   bindtap="jumpLittle"
+   data-id="{{item._id}}"
+   >
+   </image>
+   <view class="little_text"
+   >{{item.text}}</view>
+  </view>
+</view>
+<!-- 小图标结尾 -->
+<!-- 今日预约 图标-->
+<view class="icon_box" >
+<image class="icon" src='{{today[1].fileID}}' >今日预约</image>
+</view>
+<!-- 头部地址弹窗 -->
+<van-popup show="{{ show }}" bind:close="onClose" style="width:200px;height:200px;background:pink;"position="top">
+  <view class="chuang">
+    <van-button style="width:80px;height:50px;"  wx:for="{{adress}}" wx:key="index" size="small" type="primary" round="true">{{item.text}}</van-button>
+  </view>
+</van-popup>
+<!-- 今日预约 -->
+<view class="content" >
+  <image class="pic" wx:for="{{indexDetail}}" wx:key="index"  src='{{item.fileID}}' bindtap='jumpPlay' data-id="{{item._id}}">
+  </image>
+</view>
+<!-- 爆款推荐 图标 -->
+<view class="icon_box">
+  <image class="icon" src="{{today[0].fileID}}" ></image>
+</view>
+<!-- 爆款推荐 -->
+<view class="container">
+  <view wx:for="{{baokuan}}" wx:key="index" class="recommend" bindtap="jumpDetail" data-id="{{item._id}}">
+    <image class="re-pic" src="{{item.fileID}}"></image>
+    <view class="re-title">{{item.title}}</view>
+    <view>
+      <text class="re-price">{{item.price}}</text>
+      <text class="re-re">{{item.re}}</text>
+    </view>
+  </view>
+</view>
+

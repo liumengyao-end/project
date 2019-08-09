@@ -1,0 +1,4 @@
+/* pages/search/search-product/search-product.wxss */
+.title_box{
+  display:flex;
+}

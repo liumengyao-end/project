@@ -1,0 +1,13 @@
+<!--pages/search/search-product/search-product.wxml-->
+<text>pages/search/search-product/search-product.wxml</text>
+
+
+
+<template name="search-product">
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="单品">
+    </van-tab>
+    <van-tab title="店铺">
+    </van-tab>
+  </van-tabs>
+</template>

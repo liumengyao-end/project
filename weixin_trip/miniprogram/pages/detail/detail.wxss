@@ -1,0 +1,105 @@
+/* pages/detail/detail.wxss */
+/* 父元素 */
+.container{
+  width:100%;
+  height:500rpx;
+  border:1px solid #000;
+  display:flex;
+  align-items:center;
+}
+/* 背景图片 虚化 */
+.pic1{
+  width:100%;
+  height:500rpx;
+  border:1px solid #000;
+  filter:blur(20rpx);/*模糊滤镜*/
+  opacity: .4;
+  position:absolute;
+}
+/* 黑色背景 */
+.bc{
+  width:100%;
+  height:500rpx;
+  background:#000;
+  opacity:.8;
+}
+/* 背景 */
+.pic2{
+  width:95%;  
+  margin:0 auto;
+  height:500rpx;
+  position:absolute;
+  border-radius:10rpx;
+}
+/* 内容 */
+.content{
+  width:100%;
+  height:100rpx;
+  background:#FF4444;  
+}
+/* 价格 */
+.price{
+  color:#fff;
+  font-size:48rpx;
+  margin-right:20rpx;
+  line-height:100rpx;
+}
+/* 价格 */
+.count{
+  color:#fff;
+  font-size:30rpx;
+  margin-right:20rpx;
+  text-decoration: line-through;
+}
+/* 限量秒杀 */
+.aa{
+  font-size:35rpx;
+  color:#ff0;
+}
+.intro{
+  font-size:30rpx;
+  padding:18rpx;
+  line-height:40rpx;
+}
+/* 进度条 */
+view.progress{
+  display:flex;
+  justify-content:space-between;
+  padding: 40rpx 30rpx 30rpx;
+}
+view.progress>view{
+  color:#000;
+  font-size:32rpx;
+}
+view.progress>view>text.progress_color{
+  color:#FF4444;
+  font-size:40rpx;
+}
+.notice{
+  margin:30rpx;
+}
+/* 商品详情 */
+.goods{
+  color:#333;
+  padding:30rpx;
+  font-size:40rpx;
+  border-bottom:20rpx solid #FFFBE8;
+}
+/* 商品详情下面的图片加文字 */
+.details{
+  padding-left:30rpx;
+  padding-right:30rpx;
+}
+.text{
+  color:#333;
+  font-size:32rpx;
+  line-height:50rpx;
+}
+#tt{
+  display:block;
+  text-align:center;
+  font-size:40rpx;
+  font-weight: bold;
+  color:#333;
+  padding-bottom:40rpx;
+}

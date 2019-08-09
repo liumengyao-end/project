@@ -1,0 +1,56 @@
+<!--pages/search/search.wxml-->
+<!-- 顶部搜索框 -->
+<view class="section">
+  <van-search
+  value="{{ value }}"
+  placeholder="厦门"
+  use-action-slot
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+  focus=true
+  show-action
+  shape="round"
+>
+  <image src='../../images/little_img/search.png' style="width:35px;height:35px;margin-top:15px;" slot="action" bind:tap="onSearch" ></image>
+</van-search>
+</view>
+
+<!-- 引入搜索页面的两个子组件 -->
+<view wx:if="{{valueSearch.length==0}}">
+        <import src="search-address/search-address.wxml"/>
+        <template is="search-address" />
+        <!-- 小图标 -->
+        <view class="little_box_box">
+          <view class="little_box" wx:for="{{pics}}" wx:key="index"> 
+          <image 
+          src="{{item.fileID}}"
+          style="width:35px;height:35px;"
+          >
+          </image>
+          <view class="little_text"
+          >{{item.text}}</view>
+          </view>
+        </view>
+</view>
+<view wx:if="{{valueSearch.length>0}}">
+          <import src="search-product/search-product.wxml"/>
+          <template is="search-product"/>
+          <!-- danpin -->
+          <view class="product_box" wx:for="{{danpin}}" wx:key="index">
+            <image src='{{item.fileIds}}' style="width:150px;height:150px;"></image>
+            <view class="text_box" >
+              <view class="text_text">
+                <text class="c1">{{item.detail}}</text>
+                <text class="c2">{{item.price}}</text>
+                <text class="c3">{{item.price2}}</text>
+              </view>
+          </view> 
+          </view>
+</view>
+
+
+
+
+
+
+

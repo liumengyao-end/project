@@ -1,0 +1,14 @@
+<!--pages/search/search-address/search-address.wxml-->
+
+<template name="search-address">
+  <view class="title">热门搜索</view>
+  <view class="button_box">
+    <button class="little_button">天津</button>
+    <button class="little_button">黄山</button>
+    <button class="little_button">方特</button>
+    <button class="little_button">温泉</button>
+  </view>
+  <view class="title">常用分类</view>
+</template>
+
+

@@ -1,0 +1,12 @@
+/* pages/search/search.wxss */
+#p{
+  background:gary;
+  border-radius: 5px;
+}
+.title{
+  font-size:15px;
+  color:gray;
+}
+van-search{
+  border-radius: 15px;
+}

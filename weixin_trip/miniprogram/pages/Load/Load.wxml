@@ -1,0 +1,12 @@
+<!--pages/Load/Load.wxml-->
+<van-button type="info" bindtap='selectImages'>上传图片</van-button>
+<view bindtap='showPics'>
+ 显示图片
+</view>
+<view> 
+   <image 
+   wx:for="{{today}}" 
+   wx:key="index"
+   src="{{item.fileID}}">
+   </image>
+</view>

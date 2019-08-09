@@ -1,0 +1,28 @@
+<!--pages/Little/Little.wxml-->
+<!-- 顶部小图标导航 -->
+<view class="little-box" >
+  <view class="little_box" wx:for="{{photo}}" wx:key="index" > 
+   <image 
+   src="{{item.fileID}}"
+   style="width:35px;height:35px;"
+   bindtap="jumpLittle"
+   data-id="{{item._id}}"
+   >
+   </image>
+   <view class="little_text"
+   >{{item.text}}</view>
+  </view>
+</view>
+<!-- 正文 -->
+<view class="product_box" wx:for="{{little}}" wx:key="index">
+  <image src='{{item.fileIds}}' style="width:150px;height:150px;"></image>
+  <view class="text_box" >
+    <view class="text_text">
+      <text class="c1">{{item.detail}}</text>
+      <text class="c2">{{item.price}}</text>
+      <text class="c3">{{item.price2}}</text>
+    </view>
+  </view> 
+</view>
+
+

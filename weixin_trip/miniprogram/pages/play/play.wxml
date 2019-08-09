@@ -1,0 +1,7 @@
+<!--pages/play/play.wxml-->
+<view style="background-color:{{list.color}}">
+    <!-- 上面的背景图片 -->
+    <image lazy-load class="week" src="{{list.fileID}}" style="width:100%;"></image>
+    <view style="text-align:center;font-size:25px; color:#fff;">{{list.title}}</view>
+    <view class="wenzi" style="color:#eee;padding:13px;font-size:16px;line-height:30px;">{{list.ari}}</view>    
+</view>

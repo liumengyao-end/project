@@ -1,0 +1,75 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+   <image src="{{list.fileID}}" class="pic1" style="width:100%;"></image>
+   <view class="bc"></view>
+   <image src="{{list.fileID}}" class="pic2" style="width:100%;"></image>
+</view>
+<!-- 详情 -->
+<view class="content">
+   <text class="price">￥{{list.price}}</text>
+   <text class="count">￥{{list.re}}</text>
+   <text class="aa">限量秒杀</text>
+</view>
+<view class="intro">{{list.title}}</view>
+<!-- 进度条 -->
+<view class="progress">
+  <view>
+    <text>已抢购</text>
+    <text class="progress_color">225</text>
+  </view>
+  <view>
+    <text>仅剩</text>
+    <text class="progress_color">75</text>
+    <text>人</text>
+  </view>
+</view>
+<van-progress
+  color="#f2826a"
+  percentage="75"
+/>
+<!--通告栏-->
+<view class="notice">
+  <van-notice-bar text="{{list.title}}"/>
+</view>
+<view class="notice">
+  <van-notice-bar text="不爱包浆的核桃  只想闻你手腕上的沉香  不屑唐朝的瓷碗  只想尝你熬的汤    宇宙的中心很大  大到可以装下一万种委屈  宇宙的中心很小  小到一碗泡面就可以温暖自己    大山子的节奏很慢  我的身材很胖  但还好  我们都是自己喜欢的模样    三里屯的灯光还是那样明亮  我却不敢喝醉了  因为害怕自己回家时  再也找不到藏在楼道里的钥匙    点了几串小腰  多喝了几杯酒  在不明朝向的望京街道上  怎么也找不到回家的方向    有时是一口  就泪流满面  不是因为辣椒太辣  而是因为家乡太远    想把西瓜最中间  那一口给你  这就是我的心意"/>
+</view>
+
+
+<!-- 商品详情 -->
+<!--商品详情-->
+<view class="goods">商品详情</view>
+<!--下面的图片布局-->
+<view class="details">    
+    <text id="tt" class="text">
+       侠侣亲子游
+    </text>
+    <image style="width:100%;" src="{{list.fileID}}"></image>
+    <text class="text">
+       不爱包浆的核桃  只想闻你手腕上的沉香  不屑唐朝的瓷碗  只想尝你熬的汤    宇宙的中心很大  大到可以装下一万种委屈  宇宙的        中心很小  小到一碗泡面就可以温暖自己    大山子的节奏很慢  我的身材很胖  但还好  我们都是自己喜欢的模样    三里屯的灯光        还是那样明亮  我却不敢喝醉了  因为害怕自己回家时  再也找不到藏在楼道里的钥匙    点了几串小腰  多喝了几杯酒  在不明朝向        的望京街      道上  怎么也找不到回家的方向    有时是一口  就泪流满面  不是因为辣椒太辣  而是因为家乡太远    想把西瓜         最中间  那一口给你  这就是我的心意"
+    </text>
+    <text id="tt" class="text">
+       侠侣亲子游
+    </text>
+    <image style="width:100%;" src="{{list.fileID}}"></image>
+    <text class="text">
+       不爱包浆的核桃  只想闻你手腕上的沉香  不屑唐朝的瓷碗  只想尝你熬的汤    宇宙的中心很大  大到可以装下一万种委屈  宇宙的        中心很小  小到一碗泡面就可以温暖自己    大山子的节奏很慢  我的身材很胖  但还好  我们都是自己喜欢的模样    三里屯的灯光        还是那样明亮  我却不敢喝醉了  因为害怕自己回家时  再也找不到藏在楼道里的钥匙    点了几串小腰  多喝了几杯酒  在不明朝向        的望京街      道上  怎么也找不到回家的方向    有时是一口  就泪流满面  不是因为辣椒太辣  而是因为家乡太远    想把西瓜         最中间  那一口给你  这就是我的心意"
+    </text>
+</view>
+
+<!-- 下面的 -->
+<van-goods-action>
+  <van-goods-action-icon
+    icon="shop-o"
+    text="店铺"
+    bind:click="onClickShop"
+  />
+  <van-goods-action-button
+    text="立即购买"
+    bind:click="onClickButton"
+    data-id="{{list._id}}
+  />
+</van-goods-action>
+
+
+

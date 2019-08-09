@@ -1,0 +1,16 @@
+<!--pages/upload/upload.wxml-->
+<text>pages/upload/upload.wxml</text>
+<van-button type="danger" bindtap='insert'>添加数据</van-button>
+<van-button type="danger" bindtap='update'>更新数据</van-button>
+<van-button type="danger" bindtap='remove'>删除数据</van-button>
+<van-button type="info" bindtap='selectImage'>上传图片</van-button>
+<view bindtap='showAdress'>
+ 显示图片
+</view>
+<view> 
+   <image 
+   wx:for="{{today}}" 
+   wx:key="index"
+   src="{{item.fileID}}">
+   </image>
+</view>
