@@ -1,0 +1,195 @@
+html, body {
+    font-family: "Microsoft Yahei", "PingFang SC";
+}
+input, button,select,option {
+    font-family: "Microsoft Yahei", "PingFang SC";
+}
+body{padding: 0 20px 0 0;margin:0;}
+* {
+    margin: 0;
+    padding: 0;
+}
+i, em {
+    font-style: normal;
+}
+.articlemain{
+	max-width: 640px;
+	margin:0 auto;
+	/*min-width: 640px;*/
+}
+.rich_media_title{
+	margin-bottom: 10px;
+	margin-top: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 24px;
+}
+.rich_media_meta_list {
+    margin-bottom: 18px;
+    line-height: 20px;
+     font-size: 0; 
+}
+.rich_media_meta_text {
+    color: #8c8c8c;
+}
+.rich_media_meta {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.articleimg{
+	width: 100%;
+	margin-top: 20px;
+}
+.articleimg img{
+	width: 100%;
+}
+
+/*新文章公用样式*/
+.artmodel-content{
+    margin:0 auto;
+}
+.artmodel-title h3{
+    font-size:30px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+.artmodel-title em{
+    font-size:14px;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    display:block;
+    margin-top:15px;
+}
+.artmodel-main{
+    margin-top:30px;
+}
+.artmodel-text{
+    font-size:14px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:27px;
+    text-indent:25px;
+}
+.artmodel-img{
+    margin:35px 0;
+    text-align:center;
+}
+.artmodel-img img{
+    display:inline-block;
+    text-align:center;
+    width:65%;
+}
+.artmodel-img span{
+    display:block;
+    text-align:center;
+    margin-top:10px;
+    font-size:14px;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+.artmodel-maintit{
+    padding:8px 0;
+    border-bottom:1px solid #E6E6E6;
+    margin:30px 0;
+}
+.artmodel-maintit i{
+    width:40px;
+    height:34px;
+    background: url("artmodletiticon.png")/*tpa=http://www.1zu.com/styles/index/images/article/artmodletiticon.png*/ no-repeat;
+    background-size: 40px 34px;
+    display:inline-block;
+    background-position: 0 5px;
+}
+.artmodel-maintit span{
+    display:inline-block;
+    margin-left:8px;
+    font-size:18px;
+    font-weight:600;
+    color:rgba(51,51,51,1);
+    vertical-align: super;
+}
+.artmodel-maintit b {
+    vertical-align: super;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.item-footer p {
+    text-align: center;
+    line-height: 27px;
+    font-size:14px;
+    color: rgba(51,51,51,1);
+}
+.item-right {
+    text-align: right;
+}
+.artmodel-fontcolor{
+    color: rgb(96, 25, 134)!important;
+    font-weight: bold!important;
+}
+.artmodel-fontcolor-red{
+    color: red!important;
+    font-weight: bold;
+}
+.artmodel-fontbold{
+    font-weight: bold;
+}
+.artmodel-spanfr {
+    text-align: right;
+    display: block;
+    font-weight: bold;
+    color: rgb(89, 89, 89);
+}
+.armagin{
+	margin:30px 0;
+}
+.artmodel-smtit{
+    color: #FFC000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: left;
+    text-indent: 25px;
+}
+
+
+
+
+@media screen and (max-width:600px){
+	body{
+        width: 90%;
+        margin: 5% auto;
+        padding: 0;
+	}
+	.artmodel-title h3{
+		font-size: 20px;
+        font-weight: bold;
+        line-height: 32px;
+	}
+	.artmodel-title em{
+		font-size: 12px;
+        margin-top: 12px;
+	}
+	.item-footer p {
+		line-height: 28px;
+		font-size: 12px;
+	}
+	.artmodel-img img{
+		width: 100%;
+	}
+	.artmodel-text {
+		font-size: 14px;
+		line-height: 30px;
+        text-indent: 0;
+	}
+	.artmodel-img span {
+		font-size: 12px;
+	}
+    .artmodel-img {
+        margin: 20px 0;
+        text-align: center;
+    }
+	
+}

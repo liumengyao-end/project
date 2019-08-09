@@ -1,0 +1,124 @@
+.ltitle{
+   padding-left:8px;
+}
+.yzwt .title{
+   position:fixed;
+   top:0;
+   z-index:999;
+   width:100%;
+   padding:10px 0px;
+   font-size:18px;
+   font-weight:bold;
+   font-family:"楷体";
+   background:#fff;
+   margin-left:-8px;
+}
+.yzwt .title span{
+   text-decoration:none;
+   padding-right:10px;
+   margin-left:-10px;
+}
+.yzwt .title span img{
+   width:18px;
+}
+.yzwt .title .kong{
+      width:13.5px;
+}
+.yzwt #im{
+   margin-top:43px;
+   text-align:center;
+   position:relative;
+   padding:0 10px;
+}
+.yzwt #im>img{
+   width:100%;
+   height:200px;
+}
+.yzwt #weit>#btn{
+   text-align:center;
+   border-bottom:1px solid #ccc;
+}
+.yzwt #weit>#btn a{
+   text-decoration:none;
+   display:inline-block;
+   padding:5px 50px;
+   border:1px solid #62188B;
+   border-radius:8px;
+   margin:0 10px 10px 10px;
+   color:#62188B;
+   font-size:14px;
+   background:#EAD1FA;
+}
+.yzwt #weit>#btn a:not(:first-child){
+   background:#62188B;
+   color:#fff;
+}
+.yzwt #ituo{
+   display:flex;
+   justify-content:space-between;
+   flex-wrap:wrap;
+   padding-bottom:13px;
+   border-bottom:1px solid #ccc;
+}
+.yzwt #ituo .ituo{
+   text-align:center;
+   margin-top:15px;
+   width:49%;
+}
+.yzwt #ituo .ituo>div{
+   width:60px;
+   height:60px;
+   border-radius:100px;
+   background-image:linear-gradient(to top,#62188B,#d9abf6);
+   margin:0 auto;
+}
+.yzwt #ituo .ituo>div>img{
+   width:60%;
+   padding:12px;
+}
+.yzwt #ituo .ituo:nth-child(5)>div>img{
+   padding-top:15px;
+}
+.yzwt #ways{
+      border-bottom:1px solid #ccc;
+      padding-bottom:10px;
+}
+.yzwt #ways>div{
+      padding:10px;
+}
+.yzwt #ways>div>img{
+      width:100%;
+}
+.yzwt #ways>div>div{
+      text-align:center;
+      background:#a267c4;
+      opacity:0.9;
+      margin-top:-59px;
+}
+.yzwt #ways>div>div>span{
+      display:block;
+      font-size:12.5px;
+      color:#fff;
+      padding:5px;
+}
+.yzwt #ways>div>div>span:first-child{
+      font-weight:bold;
+      font-size:14px;
+}
+.yzwt #ways>.t2>div{
+      background:#7c7cec;
+}
+.yzwt #ways>.t3>div{
+      background:#f8d5db;
+}
+.yzwt .btm{
+      text-align:center;
+      padding:10px 0;
+      margin-bottom: 40px;
+}
+.yzwt .btm img:first-child{
+      width:20%;
+}
+.yzwt .btm img.second{  
+      width:30%;
+}

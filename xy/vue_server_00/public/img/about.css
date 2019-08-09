@@ -1,0 +1,570 @@
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+
+.lx-life-con{
+	width: 1180px;
+	margin: 0 auto;
+}
+.lx-life-lable{
+	font-size:12px;
+	color:rgba(153,153,153,1);
+	line-height:15px;
+	margin: 23px 0 12px 0;
+}
+.lx-life-banner{
+	width: 100%;
+	height: 303px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+  	font-size: 18px;
+  	background: #fff;
+
+  	/* Center slide text vertically */
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-box-pack: center;
+  	-ms-flex-pack: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+  	-webkit-box-align: center;
+  	-ms-flex-align: center;
+  	-webkit-align-items: center;
+  	align-items: center;
+}
+.swiper-slide img {
+	width: 100%;
+	height: 303px;
+}
+.lx-life-content{
+	margin-top:50px; 
+}
+.lx-life-menu{
+	float: left;
+	width: 265px;
+}
+.lx-life-main{
+	float: left;
+	margin-left: 35px; 
+	width: 880px;
+	display:none;
+}
+.lx-lifemenu-tab li{
+	width: 100%;
+	height: 50px;
+	font-size:16px;
+	color:rgba(51,51,51,1);
+	line-height:50px;
+	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
+	position: relative;
+	cursor: pointer;
+}
+.lx-lifemenu-tab li em{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width:28px;
+	height:2px; 
+	background:rgba(144,107,200,1);
+	margin-left: -14px;
+}
+.lx-lifemenutab-active{
+	width:265px;
+	height:50px; 
+	background:rgba(144,107,200,1);
+	border-radius: 4px; 
+	border-radius: 3px;
+	color: #fff;
+}
+.lx-lifemenu-tab .lx-lifemenutab-active{
+	color: #fff
+}
+.lx-lifemenutab-active em{
+	display: none;
+}
+.lx-lifemenu-article{
+	margin-top:55px;
+}
+.lx-lifemenu-article h5{
+	height:20px; 
+	font-size:20px;
+	color:rgba(51,51,51,1);
+	line-height:29px;
+	margin-bottom: 12px;
+}
+.lx-lifemenu-article li{
+	font-size:14px;
+	color:rgba(51,51,51,1);
+	line-height:24px;
+	border-bottom: 1px solid #E6E6E6;
+	padding: 12px 0
+}
+.lx-lifemenu-article a{
+	color:rgba(51,51,51,1);
+}
+.lx-lifemenu-article a:hover{
+	color: #906BC8
+}
+.lx-lifemenu-article span{
+	display: inline-block;
+	font-size: 12px;
+	width:17px;
+	height:17px; 
+	background:rgba(255,176,60,1);
+	border-radius: 2px;
+	color:rgba(255,255,255,1);
+	line-height:17px; 
+	text-align: center;
+	margin-right:5px; 
+}
+.lx-lifemain-list{
+	border-bottom: 1px solid #E6E6E6;
+	padding: 29px 0; 
+}
+.lx-lifemain-list:first-child{
+	padding: 0 0 29px 0
+}
+.lx-lifelist-img{
+	float: left;
+	width:240px;
+	height:180px; 
+	border-radius: 3px;
+}
+.lx-lifelist-text{
+	float: left;
+	margin-left: 40px;
+	width: 590px;
+}
+.lx-lifelist-text a{
+	color:rgba(51,51,51,1);
+}
+.lx-lifelist-text a:hover{
+	color: #906BC8
+}
+.lx-lifelist-text h5{
+	height: 25px;
+	font-size:20px;
+	color:rgba(51,51,51,1);
+	line-height: 25px;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.lx-lifelist-text span{
+	display: inline-block;
+	background: url("timeicon.png")/*tpa=http://www.1zu.com/styles/index/images/life/timeicon.png*/ no-repeat;
+	background-size: 15px 15px;
+	font-size:14px;
+	color:rgba(102,102,102,1);
+	line-height:15px;
+	padding-left: 25px;
+	margin-top: 17px;
+}
+.lx-lifelist-text p{
+	height:75px; 
+	font-size:14px;
+	color:rgba(102,102,102,1);
+	line-height:24px;
+	margin-top: 20px;
+	overflow: hidden;
+	
+	
+}
+.lx-lifelist-more{
+	display: inline-block;
+	font-size:14px;
+	color:rgba(51,51,51,1);
+	float: right;
+	margin-top: 15px;
+}
+.lx-lifelist-more  i {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    background: url("index_icon.png")/*tpa=http://www.1zu.com/styles/index/images/index/index_icon.png*/ no-repeat;
+    background-position: 1px -34px;
+    background-size: 60px;
+    margin-left: 5px;
+}
+
+.lx-lifelist-more:hover{
+	color: #906BC8;
+}
+.lx-lifelist-more:hover i{
+	width: 16px;
+    height: 12px;
+    background: url("index_icon.png")/*tpa=http://www.1zu.com/styles/index/images/index/index_icon.png*/ no-repeat;
+    background-position: 2px -50px;
+    background-size: 60px;
+}
+.lx-life-page{
+	float: right;
+	margin-top: 44px; 
+	margin-bottom: 131px;
+}
+.lx-life-page li{
+	height: 30px;
+	font-size:14px;
+	color:rgba(102,102,102,1);
+	padding: 0 14px;
+	float: left;
+	margin-right: 4px;
+	border:1px solid #DCDCDC;
+	line-height: 30px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.lx-life-page li.lx-life-pageactive{
+	background:rgba(144,107,200,1);
+	color: #fff;
+}
+.lx-life-page li:hover{
+	background:rgba(144,107,200,1);
+	color: #fff;
+	opacity: 0.6
+}
+.lx-life-page span{
+	display: inline-block;
+	padding: 0 14px;
+	height: 30px;
+	font-size:14px;
+	line-height: 30px;
+	font-size:14px;
+	color:rgba(102,102,102,1);
+	float: left;
+}
+
+/*关于我们*/
+.lx-about-content{
+	margin-top: 23px;
+
+}
+.lx-about-content .lx-lifemenu-tab li{
+	height: 64px;
+	line-height: 64px;
+
+}
+.lx-about-content .lx-lifemenu-tab li.lx-lifemenutab-active{
+	height: 50px;
+	line-height: 50px;
+}
+.lx-about-conbox{
+	margin-left:36px;
+	float: left;
+	width: 879px;
+	margin-bottom: 100px;
+	min-height: 400px;
+}
+
+.lx-about-introduce{
+	margin-bottom: 53px;
+}
+.lx-about-introduce h4{
+	height:29px;
+	font-size:26px;
+	color:rgba(51,51,51,1);
+	line-height:29px;
+	border-bottom: 1px solid #E6E6E6;
+	padding:12px 0 12px  39px;
+	background:url("introduceicon.png")/*tpa=http://www.1zu.com/styles/index/images/about/introduceicon.png*/ no-repeat;
+}
+.lx-about-introduce h4.lx-aboutint-title1{
+	background-position: 0 14px
+}
+.lx-about-introduce h4.lx-aboutint-title2{
+	background-position: 0 -28px
+}
+.lx-about-introduce h4.lx-aboutint-title3{
+	background-position: 0 -73px
+}
+.lx-about-introduce h4 span{
+	display: inline-block;
+	height:19px;
+	line-height: 19px;
+	border-left: 1px solid rgba(51,51,51,0.7);
+	padding-left: 10px;
+	font-size:16px;
+	font-weight:300;
+	color:rgba(51,51,51,0.7);
+	margin-left: 15px;
+}
+.lx-about-introduce p{
+	font-size:14px;
+	color:rgba(51,51,51,1);
+	line-height:29px;
+	margin:22px 0;
+}
+.lx-about-introduce p span{
+	color:#906BC8;
+	font-weight:bold;
+	padding-right: 5px;
+}
+.lxabout-innovation{
+	width: 878px;
+	margin-top: 25px;
+}
+.lxabout-innovation li{
+	width:432px;
+	height:326px;
+	background:rgba(255,255,255,1);
+	margin-bottom: 15px;
+}
+.lxabout-innovation li .lxaboutinn-main{
+	border:1px solid rgba(230, 230, 230, 1);
+	border-top: none;
+	border-radius:0 0 4px 4px;
+	height: 130px;
+}
+.lxabout-innovation li .lxaboutinn-banner{
+	width: 100%;
+	height: 194px;
+	overflow: hidden;
+}
+.lxabout-innovation li i{
+	display: inline-block;
+	width:24px;
+	height:2px;
+	background:rgba(51,51,51,1);
+	margin: 18px 0 10px 20px;
+}
+.lxabout-innovation li .lxaboutinn-tit{
+	font-size:16px;
+	font-weight:600;
+	color:rgba(51,51,51,1);
+	line-height:18px;
+	padding: 19px 0 0 19px;
+}
+.lxabout-innovation li .lxaboutinn-text{
+	font-size:12px;
+	font-weight:300;
+	color:rgba(153,153,153,1);
+	line-height:24px;
+	margin: 0 20px;
+}
+.lx-about-introduce img{
+	width: 100%
+}
+.lx-about-conpanymap{
+	width: 100%;
+	margin-bottom: 57px;
+}
+.lx-about-companyadd{
+	font-size:14px;
+	color:rgba(51,51,51,1);
+	line-height:29px;
+}
+.lx-about-companyadd span{
+	font-weight: bold;
+}
+.lx-about-introduce h4.lx-aboutbus-tit1{
+	background: url("cooperation-icon.png")/*tpa=http://www.1zu.com/styles/index/images/about/cooperation-icon.png*/ no-repeat;
+	background-size: 29px;
+	background-position: 0 13px;
+}
+.lx-about-introduce h4.lx-aboutbus-tit2{
+	background: url("reason-icon.png")/*tpa=http://www.1zu.com/styles/index/images/about/reason-icon.png*/ no-repeat;
+	background-size: 29px;
+	background-position: 0 13px;
+}
+
+.lx-about-introduce h4.lx-aboutenj-tit1{
+	background: url("joinus-ic1.png")/*tpa=http://www.1zu.com/styles/index/images/about/joinus-ic1.png*/ no-repeat;
+	background-size: 29px;
+	background-position: 0 13px;
+}
+.lx-about-introduce h4.lx-aboutenj-tit2{
+	background: url("joinus-ic2.png")/*tpa=http://www.1zu.com/styles/index/images/about/joinus-ic2.png*/ no-repeat;
+	background-size: 29px;
+	background-position: 0 13px;
+}
+.lx-about-introduce h4.lx-aboutenj-tit3{
+	background: url("joinus-ic3.png")/*tpa=http://www.1zu.com/styles/index/images/about/joinus-ic3.png*/ no-repeat;
+	background-size: 29px;
+	background-position: 0 13px;
+}
+.lx-aboutenj-img{
+	margin-top:27px;
+}
+.lx-aboutenj-img li{
+	float:left;
+	width:280px;
+}
+.lx-aboutenj-img li img{
+	width:280px;
+	height:186px;
+}
+.lx-aboutenj-img li:nth-child(2){
+	margin:0 19px;
+}
+.lx-aboutenj-img li .lx-aboutenj-text{
+	width:240px;
+	margin: 0;
+	height: 120px;
+	border:1px solid rgba(230, 230, 230, 1);
+	border-top:none;
+	border-radius:4px;
+	padding:19px;
+	font-size:12px;
+	font-weight:300;
+	color:rgba(153,153,153,1);
+	line-height:24px;
+}
+
+
+.lifedetail-banner{
+	width:1180px;
+	height:150px;
+	background:rgba(95,95,95,1);
+	border-radius:4px;
+	margin:30px auto 0;
+}
+.lifedetail-menu{
+	width:1180px;
+	padding:20px 0;
+	margin:0 auto;
+	background:rgba(255,255,255,1);
+	border-bottom:1px solid #D9D9D9;
+}
+.lifedetail-content{
+	width:1180px;
+	margin:40px auto 90px;
+}
+.lifedetail-menu-label{
+	float: left;
+}
+.lifedetail-menu-label,.lifedetail-menu-label span,.lifedetail-menu-label span a{
+	font-size:14px;
+	font-weight:400;
+	color:rgba(153,153,153,1);
+	line-height:39px;
+}
+.lifedetail-menu-table{
+	float: right;
+}
+.lifedetail-menu-table li{
+	width:104px;
+	height:39px;
+	font-size:16px;
+	font-weight:400;
+	float: left;
+	line-height: 39px;
+	text-align:center;
+}
+.lifedetail-menu-table li a{
+	color:rgba(51,51,51,1);
+}
+.lifedetail-menu-table li.lifedetail-menutable-active{
+	background:rgba(130,98,187,1);
+	border-radius:4px;
+
+}
+.lifedetail-menu-table li.lifedetail-menutable-active a{
+	color: #fff;
+}
+.lifedetailcon-article{
+	width: 876px;
+	height:auto;
+	float: left;
+}
+.lifedetailcon-hot{
+	width:265px;
+	float: right;
+}
+.lifedetailconhot-img{
+	display: block;
+	width:265px;
+	height:304px;
+	background:rgba(0,0,0,1);
+	border-radius:4px;
+
+}
+.lifedetailcon-hot .lx-lifemenu-article{
+	margin-top: 40px;
+}
+.lifedetailcon-article iframe{
+	width: 100%;
+	border: none;
+	background: none;
+	height:105%;
+}
+
+
+
+
+.notice-mian{
+	padding:58px 0;
+	width: 800px;
+    margin: auto;
+}
+.notice-title h5{
+	font-size:26px;
+	font-weight:bold;
+	color:rgba(51,51,51,1);
+	line-height:48px;
+	text-align: center;
+}
+.notice-title p{
+	font-size:14px;
+	font-weight:300;
+	color:rgba(51,51,51,0.7);
+	text-align: center;
+	margin-top: 25px;
+}
+.notice-text{
+	margin: 50px 0 30px 0;
+}
+.notice-text p{
+	font-size:14px;
+	font-weight:300;
+	color:rgba(51,51,51,1);
+	line-height:30px;
+}
+.notice-text p.noticetext-tit{
+	font-weight: bold;
+}
+.noticelist{
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(144, 107, 200, 1);
+	border-radius:4px;
+	padding: 29px 25px 29px 29px;
+}
+.noticelist li{
+	padding-bottom: 20px;
+}
+.noticelist li:last-child{
+	padding: 0;
+}
+.noticelist li a{
+	display: inline-block;
+	font-size:16px;
+	font-weight:400;
+	color:rgba(51,51,51,1);
+	line-height:29px;
+	
+}
+.noticelist li a:hover{
+	color: #906BC8;
+}
+.noticelist li span{
+	float: right;
+	font-size:16px;
+	font-weight:400;
+	color:rgba(102,102,102,1);
+	line-height:29px;
+}
